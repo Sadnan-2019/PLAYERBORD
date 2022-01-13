@@ -1,0 +1,206 @@
+
+
+
+
+
+
+
+
+
+
+
+
+/* //media query//
+
+mobile ?? */
+
+
+@media only screen and (max-width:786px) {
+    
+    .container{
+
+        width: 100%;
+    }
+    
+   
+    .players{
+
+        background-color: rgb(78, 24, 24);
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+
+}
+
+main{
+    flex-direction: column;
+    display: flex;
+    padding: 50px;
+     align-items: center;
+}
+.container{
+
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 20px;
+     
+    border-radius: 15px solid rgb(194, 13, 13);
+}
+.section-title{
+
+
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    margin-left: 10px;
+}
+
+
+
+.top-player{
+
+    margin-bottom: 30px;
+}
+
+.players{
+
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    /* grid-column-gap: 150px; */
+}
+
+
+.player{
+
+    display: flex;
+    align-items: center;
+    /* margin: 20px; */
+}
+
+.player img{
+
+
+    width: 56px;
+    height: 58px;
+    
+}
+.player .player-name{
+    font-size: 15px;
+    margin-left: 15px;
+    
+}
+
+hr{
+
+    border: 2px solid blanchedalmond;
+}
+
+
+/* //top-blog */
+
+.blogs{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog{
+
+    display: flex;
+}
+
+.blog-info-title{
+
+    font-size: 20px;
+    /* line-height:5px; */
+    margin-left: 15px;
+}
+
+.author-name{
+    margin-left: 15px;
+    color: gray;
+    font-size: 16px;
+
+
+}
+
+.author-name a{
+    text-decoration: none;
+    color: blue;
+
+
+
+}
+
+.cources{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 45px;
+}
+
+.course{
+
+    box-shadow: 1px 5px 45px gray;
+    background-color: rgba(141, 148, 148, 0.918);
+    border-radius: 10px;
+    width: 250px;
+}
+
+.fa-star.filled{
+
+    color:#FFC014;
+}
+.course-info{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+}
+
+.course-duration{
+
+    background-color: #FFE4E8;
+}
+.fa-clock{
+
+    color: #FF596D;
+    
+}
+
+.cources-banner img{
+
+    margin: 30px;
+}

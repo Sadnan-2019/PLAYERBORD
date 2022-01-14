@@ -15,26 +15,6 @@
 mobile ?? */
 
 
-@media only screen and (max-width:786px) {
-    
-    .container{
-
-        width: 100%;
-    }
-    
-   
-    .players{
-
-        background-color: rgb(78, 24, 24);
-        grid-template-columns: repeat(1, 1fr);
-
-    }
-
-    
-
-
-    
-}
 
 
 
@@ -96,8 +76,8 @@ main{
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 25px;
-    /* grid-column-gap: 150px; */
+    grid-row-gap: 50px;
+    grid-column-gap: 150px;
 }
 
 
@@ -133,6 +113,7 @@ hr{
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+   
 }
 
 .blog{
@@ -203,4 +184,124 @@ hr{
 .cources-banner img{
 
     margin: 30px;
+}
+
+
+
+
+@media only screen and (max-width:688px) {
+    
+    .container{
+
+        width: 100%;
+    }
+
+
+
+
+    .players, .blogs, .cources{
+
+        /* background-color: rgb(78, 24, 24); */
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+
+    }
+
+    .blog{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog, .blog-info{
+
+        text-align: center;
+        justify-content: center;
+
+    }
+    /* .course{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 15px;
+    } */
+    .course{
+        /* box-shadow: 1px 5px 10px gray;
+    background-color: rgba(141, 148, 148, 0.918); */
+        margin: 10px;
+         text-align: center;
+        justify-content: center; 
+        width: 100%;
+  
+}
+   
+    
+    /* .cources{
+
+        display: none;
+    } */
+
+    
+
+
+    
+}
+
+
+@media only screen and (min-width:688px) and (max-width:1000px) {
+
+    .container{
+
+        width: 100%;
+    }
+
+
+    .players{
+
+        grid-template-columns: repeat(2, 1fr);
+        /* background-color: #FF596D; */
+       
+    }
+
+    .blogs{
+
+        grid-template-columns: repeat(1, 1fr);
+        /* background-color: #FFC014; */
+    }
+
+    .cources{
+
+        grid-template-columns: repeat(1, 1fr);
+        /* background-color: blueviolet; */
+        
+    }
+
+    .course{
+        /* box-shadow: 1px 5px 10px gray;
+    background-color: rgba(141, 148, 148, 0.918); */
+        margin: 10px;
+         text-align: center;
+        justify-content: center; 
+        width: 100%;
+  
+}
+
+
+
+    .player{
+
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .blog{
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+    
 }
